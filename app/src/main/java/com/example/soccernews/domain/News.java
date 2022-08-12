@@ -2,14 +2,12 @@ package com.example.soccernews.domain;
 
 public class News {
     private String title;
+    private String dscription;
+    private String image;
+    private String link;
 
     public String getTitle() {
         return title;
-    }
-
-    public News(String title, String dscription) {
-        this.title = title;
-        this.dscription = dscription;
     }
 
     public void setTitle(String title) {
@@ -24,5 +22,19 @@ public class News {
         this.dscription = dscription;
     }
 
-    private String dscription;
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public void setLink(String link) {
+        this.link = link;
+    }
 }
