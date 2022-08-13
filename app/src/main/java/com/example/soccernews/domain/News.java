@@ -1,40 +1,18 @@
 package com.example.soccernews.domain;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity
 public class News {
-    private String title;
-    private String dscription;
-    private String image;
-    private String link;
 
-    public String getTitle() {
-        return title;
-    }
+    @PrimaryKey
+    public int id;
+    public String title;
+    public String dscription;
+    public String image;
+    public String link;
+    public boolean favorite;
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
 
-    public String getDscription() {
-        return dscription;
-    }
-
-    public void setDscription(String dscription) {
-        this.dscription = dscription;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
 }
